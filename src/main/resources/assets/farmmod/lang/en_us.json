@@ -1,5 +1,8 @@
 {
   "item.farmmod.dildo": "Dildo",
   "item.farmmod.condom": "Condom",
+
+  "block.farmmod.irrigator_block": "Irrigator",
+
   "itemGroup.farmtab": "Farm Mod"
 }

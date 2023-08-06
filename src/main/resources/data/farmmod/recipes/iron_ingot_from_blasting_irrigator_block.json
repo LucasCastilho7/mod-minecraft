@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 100,
+  "group": "iron_ingot",
+  "ingredient": {
+    "item": "farmmod:irrigator_block"
+  },
+
+  "result": {
+    "item": "minecraft:iron_ingot",
+    "count": 2
+  }
+}

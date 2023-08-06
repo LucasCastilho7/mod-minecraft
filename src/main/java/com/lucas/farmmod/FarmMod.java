@@ -1,5 +1,6 @@
 package com.lucas.farmmod;
 
+import com.lucas.farmmod.block.ModBlocks;
 import com.lucas.farmmod.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
@@ -21,6 +22,7 @@ public class FarmMod {
     public FarmMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);

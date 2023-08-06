@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 100,
+  "group": "copper_ingot",
+  "ingredient": {
+    "item": "farmmod:irrigator_block"
+  },
+
+  "result": {
+    "item": "minecraft:copper_ingot",
+    "count": 2
+  }
+}
