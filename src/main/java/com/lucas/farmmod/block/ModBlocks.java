@@ -27,7 +27,7 @@ public class ModBlocks {
     * */
     public static final RegistryObject<Block> IRRIGATOR = registerBlock("irrigator_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .strength(3f)), ModCreativeModeTab.FARM_MOD_TAB);
+                    .strength(3f).requiresCorrectToolForDrops()), ModCreativeModeTab.FARM_MOD_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name,
                                                                      Supplier<T> block, CreativeModeTab tab) {
