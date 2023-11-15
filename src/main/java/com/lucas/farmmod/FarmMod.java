@@ -2,9 +2,11 @@ package com.lucas.farmmod;
 
 import com.lucas.farmmod.block.ModBlocks;
 import com.lucas.farmmod.item.ModItems;
+import com.lucas.farmmod.tab.ModCreativeModeTab;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -22,6 +24,8 @@ public class FarmMod {
     public FarmMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModCreativeModeTab.register(modEventBus);
+
         ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
 
@@ -29,10 +33,20 @@ public class FarmMod {
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        modEventBus.addListener(this::addCreative);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
 
+    }
+
+    public void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTab() == ModCreativeModeTab.FARM_MOD_TAB.get()) {
+            event.accept(ModItems.DILDO);
+            event.accept(ModItems.CONDOM);
+            event.accept(ModBlocks.IRRIGATOR);
+        }
     }
 
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)

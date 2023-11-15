@@ -14,9 +14,9 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, FarmMod.MOD_ID);
 
     public static final RegistryObject<Item> DILDO = ITEMS.register("dildo",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.FARM_MOD_TAB)));
+            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> CONDOM = ITEMS.register("condom",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.FARM_MOD_TAB)));
+            () -> new Item(new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) { ITEMS.register(eventBus); }
