@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 100,
+  "group": "platinum_ingot",
+  "ingredient": {
+    "item": "farmmod:raw_platinum_ore"
+  },
+
+  "result": {
+    "item": "farmmod:platinum_ingot",
+    "count": 1
+  }
+}

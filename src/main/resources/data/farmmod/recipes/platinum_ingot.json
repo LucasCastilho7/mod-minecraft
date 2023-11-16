@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "$$$",
+    "$$$",
+    "$$$"
+  ],
+  "key": {
+    "$": {
+      "item": "farmmod:platinum_nugget",
+      "count": 9
+    }
+  },
+
+  "result": {
+    "item": "farmmod:platinum_ingot",
+    "count": 1
+  }
+}

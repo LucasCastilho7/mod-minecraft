@@ -43,8 +43,15 @@ public class FarmMod {
 
     public void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTab() == ModCreativeModeTab.FARM_MOD_TAB.get()) {
+
+            // items
             event.accept(ModItems.DILDO);
             event.accept(ModItems.CONDOM);
+            event.accept(ModItems.PLATINUM_INGOT);
+            event.accept(ModItems.RAW_PLATINUM_ORE);
+            event.accept(ModItems.PLATINUM_NUGGET);
+
+            // blocks
             event.accept(ModBlocks.IRRIGATOR);
         }
     }
