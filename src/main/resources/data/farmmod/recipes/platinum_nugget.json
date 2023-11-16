@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "farmmod:platinum_ingot",
+      "count": 1
+    }
+  ],
+
+  "result": {
+    "item": "farmmod:platinum_nugget",
+    "count": 9
+  }
+}

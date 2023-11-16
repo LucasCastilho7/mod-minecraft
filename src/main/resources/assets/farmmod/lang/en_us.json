@@ -2,6 +2,10 @@
   "item.farmmod.dildo": "Dildo",
   "item.farmmod.condom": "Condom",
 
+  "item.farmmod.raw_platinum_ore": "Raw Platinum Ore",
+  "item.farmmod.platinum_ingot": "Platinum Ingot",
+  "item.farmmod.platinum_nugget": "Platinum Nugget",
+
   "block.farmmod.irrigator_block": "Irrigator",
 
   "itemGroup.farmtab": "Farm Mod"
