@@ -1,8 +1,6 @@
 package com.lucas.farmmod.item;
 
 import com.lucas.farmmod.FarmMod;
-import com.lucas.farmmod.tab.ModCreativeModeTab;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
